@@ -1,7 +1,9 @@
 backend:
   name: github
-  repo: d-rafi/psychmind-pro
-media_folder: "images/uploads"
+  repo: d-rafi/psych2  # ← Change to your GitHub username!
+  branch: main
+media_folder: "public/images"
+public_folder: "/images"
 collections:
   - name: "pages"
     label: "Pages"
