@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsychMind Pro - Psychiatry Training Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #10b981 100%);
+        }
+        .nav-link:hover {
+            border-bottom: 2px solid #10b981;
+        }
+        .scenario-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-brain text-2xl text-indigo-600 mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">PsychMind Pro</span>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="nav-link border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                        <a href="#" class="nav-link border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Articles</a>
+                        <a href="#" class="nav-link border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">CASC Prep</a>
+                        <a href="#" class="nav-link border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Scenarios</a>
+                        <a href="#" class="nav-link border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">For IMGs</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium">Login / Register</button>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                    Master Psychiatry Training & CASC Exam Success
+                </h1>
+                <p class="mt-6 max-w-lg mx-auto text-xl">
+                    Essential resources for psychiatry trainees and IMGs preparing for the CASC exam. Practice with interactive scenarios and AI-powered feedback.
+                </p>
+                <div class="mt-10">
+                    <a href="#" class="inline-block bg-white text-indigo-600 py-3 px-8 rounded-md text-lg font-medium hover:bg-gray-100">Start Practicing Now</a>
+                    <a href="#" class="ml-4 inline-block border-2 border-white text-white py-3 px-8 rounded-md text-lg font-medium hover:bg-white hover:text-indigo-600">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Features</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Everything you need for psychiatry training
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-lg font-medium text-gray-900">Latest Guidance</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Stay updated with the newest psychiatry guidelines, research, and clinical updates.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                            <i class="fas fa-comment-medical"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-lg font-medium text-gray-900">CASC Scenarios</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Practice with realistic CASC exam scenarios and receive detailed feedback.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-lg font-medium text-gray-900">AI Chat Coach</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Our AI chatbot simulates patient interactions and provides real-time analysis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-lg font-medium text-gray-900">IMG Focus</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Specialized resources for international medical graduates navigating UK psychiatry.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-lg font-medium text-gray-900">Video Tutorials</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Learn from experienced consultants demonstrating ideal CASC techniques.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-lg font-medium text-gray-900">Progress Tracking</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Monitor your improvement with detailed analytics and personalized recommendations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CASC Scenarios Section -->
+    <div class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Practice</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    CASC Exam Scenarios
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Realistic scenarios to prepare you for the Clinical Assessment of Skills and Competencies exam.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Scenario 1 -->
+                <div class="scenario-card bg-white overflow-hidden shadow rounded-lg transition duration-300">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-user-md text-white"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <h3 class="text-lg font-medium text-gray-900">Depression Assessment</h3>
+                                <p class="mt-1 text-sm text-gray-500">Station Type: History Taking</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-600">
+                                Assess a 45-year-old man presenting with low mood and anhedonia for 3 months. Explore risk factors and suicidal ideation.
+                            </p>
+                        </div>
+                        <div class="mt-5">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                                Difficulty: Medium
+                            </span>
+                        </div>
+                        <div class="mt-5">
+                            <button class="w-full inline-flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
+                                Start Scenario
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scenario 2 -->
+                <div class="scenario-card bg-white overflow-hidden shadow rounded-lg transition duration-300">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-procedures text-white"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <h3 class="text-lg font-medium text-gray-900">Capacity Evaluation</h3>
+                                <p class="mt-1 text-sm text-gray-500">Station Type: Communication</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-600">
+                                Assess a patient with bipolar disorder who is refusing medication. Evaluate capacity and discuss treatment options.
+                            </p>
+                        </div>
+                        <div class="mt-5">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+                                Difficulty: Hard
+                            </span>
+                        </div>
+                        <div class="mt-5">
+                            <button class="w-full inline-flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
+                                Start Scenario
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scenario 3 -->
+                <div class="scenario-card bg-white overflow-hidden shadow rounded-lg transition duration-300">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-family text-white"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <h3 class="text-lg font-medium text-gray-900">Family Intervention</h3>
+                                <p class="mt-1 text-sm text-gray-500">Station Type: Explanation</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-sm text-gray-600">
+                                Explain schizophrenia diagnosis to concerned family members and discuss how they can support their relative.
+                            </p>
+                        </div>
+                        <div class="mt-5">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                                Difficulty: Easy
+                            </span>
+                        </div>
+                        <div class="mt-5">
+                            <button class="w-full inline-flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
+                                Start Scenario
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
+                    View All Scenarios
+                    <i class="fas fa-chevron-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chatbot Section -->
+    <div class="py-12 bg-indigo-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                        Practice with our AI Psychiatry Coach
+                    </h2>
+                    <p class="mt-3 max-w-3xl text-lg text-indigo-200">
+                        Our advanced AI chatbot simulates real patient interactions, providing immediate feedback on your communication skills, clinical reasoning, and CASC exam technique.
+                    </p>
+                    <div class="mt-8">
+                        <div class="inline-flex rounded-md shadow">
+                            <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50">
+                                Try the AI Coach Now
+                                <i class="fas fa-robot ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0">
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                        <div class="bg-gray-50 px-4 py-5 sm:px-6 border-b border-gray-200">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-indigo-500 rounded-full p-1">
+                                    <i class="fas fa-robot text-white text-xs"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <h3 class="text-sm font-medium text-gray-900">PsychMind AI Coach</h3>
+                                    <p class="text-xs text-gray-500">Simulated patient interaction</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 py-5 sm:p-6 h-64 overflow-y-auto">
+                            <div class="space-y-4">
+                                <div class="flex justify-start">
+                                    <div class="bg-indigo-100 rounded-lg py-2 px-4 max-w-xs">
+                                        <p class="text-sm text-gray-800">Hello Doctor, I've been feeling really low for the past few months. Everything feels hopeless.</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-end">
+                                    <div class="bg-gray-100 rounded-lg py-2 px-4 max-w-xs">
+                                        <p class="text-sm text-gray-800">I'm sorry to hear that. Can you tell me more about what you mean by feeling low?</p>
+                                        <p class="text-xs text-gray-500 mt-1 text-right">Your response</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-start">
+                                    <div class="bg-indigo-100 rounded-lg py-2 px-4 max-w-xs">
+                                        <p class="text-sm text-gray-800">I just don't enjoy anything anymore. I used to love gardening but now I can't even get out of bed.</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-end">
+                                    <div class="bg-gray-100 rounded-lg py-2 px-4 max-w-xs">
+                                        <p class="text-sm text-gray-800">How has your sleep and appetite been during this time?</p>
+                                        <p class="text-xs text-gray-500 mt-1 text-right">Your response</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 px-4 py-3 sm:px-6 border-t border-gray-200">
+                            <div class="flex space-x-2">
+                                <input type="text" class="flex-1 min-w-0 block w-full px-3 py-2 rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Type your response...">
+                                <button class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                    Send
+                                    <i class="fas fa-paper-plane ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest Articles Section -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Knowledge Hub</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Latest Psychiatry Articles
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Stay updated with the newest research, guidelines, and clinical insights.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Article 1 -->
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-indigo-600">
+                                <a href="#" class="hover:underline">Pharmacology</a>
+                            </p>
+                            <a href="#" class="block mt-2">
+                                <h3 class="text-xl font-semibold text-gray-900">New Guidelines for Antidepressant Use in Bipolar Depression</h3>
+                                <p class="mt-3 text-base text-gray-500">
+                                    Updated recommendations on managing bipolar depression with antidepressants, including risks of switching and combination approaches.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="mt-6 flex items-center">
+                            <div class="flex-shrink-0">
+                                <span class="sr-only">Dr. Sarah Chen</span>
+                                <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" alt="">
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">
+                                    <a href="#" class="hover:underline">Dr. Sarah Chen</a>
+                                </p>
+                                <div class="flex space-x-1 text-sm text-gray-500">
+                                    <time datetime="2023-05-15">May 15, 2023</time>
+                                    <span aria-hidden="true">&middot;</span>
+                                    <span>8 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-indigo-600">
+                                <a href="#" class="hover:underline">Cultural Psychiatry</a>
+                            </p>
+                            <a href="#" class="block mt-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Cultural Considerations in Psychiatric Assessment for IMGs</h3>
+                                <p class="mt-3 text-base text-gray-500">
+                                    Key cultural factors to consider when assessing patients from diverse backgrounds, with practical tips for the CASC exam.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="mt-6 flex items-center">
+                            <div class="flex-shrink-0">
+                                <span class="sr-only">Dr. Raj Patel</span>
+                                <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" alt="">
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">
+                                    <a href="#" class="hover:underline">Dr. Raj Patel</a>
+                                </p>
+                                <div class="flex space-x-1 text-sm text-gray-500">
+                                    <time datetime="2023-05-10">May 10, 2023</time>
+                                    <span aria-hidden="true">&middot;</span>
+                                    <span>6 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-indigo-600">
+                                <a href="#" class="hover:underline">Exam Preparation</a>
+                            </p>
+                            <a href="#" class="block mt-2">
+                                <h3 class="text-xl font-semibold text-gray-900">Top 10 CASC Exam Mistakes and How to Avoid Them</h3>
+                                <p class="mt-3 text-base text-gray-500">
+                                    Common pitfalls in the CASC exam identified by examiners, with strategies to improve your performance.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="mt-6 flex items-center">
+                            <div class="flex-shrink-0">
+                                <span class="sr-only">Dr. Emily Wong</span>
+                                <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" alt="">
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">
+                                    <a href="#" class="hover:underline">Dr. Emily Wong</a>
+                                </p>
+                                <div class="flex space-x-1 text-sm text-gray-500">
+                                    <time datetime="2023-05-05">May 5, 2023</time>
+                                    <span aria-hidden="true">&middot;</span>
+                                    <span>10 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
+                    View All Articles
+                    <i class="fas fa-chevron-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- IMG Resources Section -->
+    <div class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Resources</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    For International Medical Graduates
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Specialized content to help IMGs navigate UK psychiatry training and the CASC exam.
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
+                    <div class="sm:flex lg:block">
+                        <div class="sm:flex-shrink-0">
+                            <div class="flow-root">
+                                <div class="bg-indigo-500 rounded-lg p-3 inline-flex">
+                                    <i class="fas fa-passport text-white text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 sm:mt-0 sm:ml-3 lg:mt-3 lg:ml-0">
+                            <h3 class="text-lg font-medium text-gray-900">UK Psychiatry System Guide</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Comprehensive overview of the UK psychiatry training pathway, NHS structure, and key differences from other systems.
+                            </p>
+                            <a href="#" class="mt-2 inline-flex items-center text-sm font-medium text-indigo-600">
+                                Learn more
+                                <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sm:flex lg:block">
+                        <div class="sm:flex-shrink-0">
+                            <div class="flow-root">
+                                <div class="bg-indigo-500 rounded-lg p-3 inline-flex">
+                                    <i class="fas fa-language text-white text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 sm:mt-0 sm:ml-3 lg:mt-3 lg:ml-0">
+                            <h3 class="text-lg font-medium text-gray-900">Communication Skills for IMGs</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Master UK-specific communication styles, idioms, and patient expectations for the CASC exam.
+                            </p>
+                            <a href="#" class="mt-2 inline-flex items-center text-sm font-medium text-indigo-600">
+                                Learn more
+                                <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sm:flex lg:block">
+                        <div class="sm:flex-shrink-0">
+                            <div class="flow-root">
+                                <div class="bg-indigo-500 rounded-lg p-3 inline-flex">
+                                    <i class="fas fa-graduation-cap text-white text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 sm:mt-0 sm:ml-3 lg:mt-3 lg:ml-0">
+                            <h3 class="text-lg font-medium text-gray-900">IMG Success Stories</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Interviews with successful IMG psychiatrists sharing their journey and tips for passing the CASC.
+                            </p>
+                            <a href="#" class="mt-2 inline-flex items-center text-sm font-medium text-indigo-600">
+                                Learn more
+                                <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="py-12 bg-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Testimonials</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    What Our Users Say
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-gray-900">Dr. Ahmed Khan</h4>
+                            <p class="text-sm text-gray-500">IMG from Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-base text-gray-600">
+                            "The CASC scenarios were incredibly realistic. Practicing with the AI coach helped me understand the nuances of UK-style communication that I was missing."
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-gray-900">Dr. Sophia Martinez</h4>
+                            <p class="text-sm text-gray-500">CT2 Trainee</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-base text-gray-600">
+                            "The articles are always up-to-date with the latest guidelines. It's my go-to resource before any teaching session or exam preparation."
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=100&q=60" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-gray-900">Dr. James Wilson</h4>
+                            <p class="text-sm text-gray-500">ST4 Trainee</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-base text-gray-600">
+                            "The IMG-specific resources helped me understand the UK system much faster. The cultural psychiatry articles are particularly valuable in my diverse patient population."
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-indigo-700">
+        <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                <span class="block">Ready to boost your psychiatry training?</span>
+                <span class="block">Start your free trial today.</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-indigo-200">
+                Get access to all our CASC scenarios, articles, and AI coaching for 7 days. No credit card required.
+            </p>
+            <a href="#" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto">
+                Sign up for free
+                <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Resources</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Articles</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Guidelines</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Video Library</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Research Updates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">CASC Prep</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Scenarios</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Mark Schemes</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Exam Tips</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Mock Exams</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">For IMGs</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">UK System Guide</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Cultural Psychiatry</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Visa & Training</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Privacy</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <span class="sr-only">Facebook</span>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <span class="sr-only">Twitter</span>
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <span class="sr-only">LinkedIn</span>
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2023 PsychMind Pro. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
