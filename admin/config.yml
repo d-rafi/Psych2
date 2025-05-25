@@ -1,9 +1,9 @@
 backend:
-  name: github
-  repo: d-rafi/psych2  # ← Change to your GitHub username!
+  name: git-gateway
   branch: main
-media_folder: "public/images"
-public_folder: "/images"
+publish_mode: editorial_workflow
+media_folder: "static/img/uploads"
+public_folder: "/img/uploads"
 collections:
   - name: "pages"
     label: "Pages"
